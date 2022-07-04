@@ -1,0 +1,12 @@
+
+<!-- <scp-numeric-attribute-input [formControlName]="attr">
+                        </scp-numeric-attribute-input>
+<span *ngIf="visible">text</span>
+ -->
+
+ <form [formGroup]="testForm">
+    <app-custom-input formControlName="external" name="externalVal"></app-custom-input>
+ </form>
+
+  external: {{this.testForm.value | json}}
+  <!-- <p>{{validations.control | json}}</p> -->
